@@ -1,0 +1,71 @@
+body{
+    color: white;
+background-image: url(../Aluraflix/KaueFlix\ \(1\).jpg);
+background-size: auto;
+font-family: "New Amsterdam", system-ui;
+margin-bottom: 100px;
+
+}
+
+header{ border-bottom: solid 2px rgb(238, 37, 37);
+ margin: 30px;
+ font-size: 32px;
+ color:white;
+}
+
+
+section{
+
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-texto{
+
+    margin-right: 5%;
+}
+
+h1{
+
+font-size: 40px;
+
+}
+
+img{
+
+    height: 200px;
+}
+
+.categoria-videos{
+
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.categoria{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+}
+
+.categoria-videos img:hover{
+
+opacity: 1.0;
+border: 5px solid red;
+
+}
+
+.categoria h2{
+
+    color: red
+}
+
+
