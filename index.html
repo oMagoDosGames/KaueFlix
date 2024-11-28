@@ -1,50 +1,65 @@
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>Kaueflix</title>
-   <link rel="stylesheet" href="styles.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Loja Online</title>
+                <link rel="stylesheet" href="style.css">
+                </head>
+                <body>
+                    <header>
+                            <h1>Minha Loja</h1>
+                                    <nav>
+                                                <ul>
+                                                                <li><a href="#produtos">Produtos</a></li>
+                                                                                <li><a href="#contato">Contato</a></li>
+                                                                                            </ul>
+                                                                                                    </nav>
+                                                                                                        </header>
 
+                                                                                                            <main>
+                                                                                                                    <section id="produtos">
+                                                                                                                                <h2>Produtos em Destaque</h2>
+                                                                                                                                            <div class="produtos">
+                                                                                                                                                            <div class="produto">
+                                                                                                                                                                                <h3>Produto 1</h3>
+                                                                                                                                                                                                    <p>R$ 100,00</p>
+                                                                                                                                                                                                                        <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
+                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                        <div class="produto">
+                                                                                                                                                                                                                                                                            <h3>Produto 2</h3>
+                                                                                                                                                                                                                                                                                                <p>R$ 200,00</p>
+                                                                                                                                                                                                                                                                                                                    <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                    <div class="produto">
+                                                                                                                                                                                                                                                                                                                                                                        <h3>Produto 3</h3>
+                                                                                                                                                                                                                                                                                                                                                                                            <p>R$ 300,00</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                <button onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao Carrinho</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    </section>
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <section id="contato">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h2>Fale Conosco</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <form>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <label for="nome">Nome:</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <input type="text" id="nome" name="nome" required>
 
-<body>
-<header>KAUEFLIX</header>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <label for="email">Email:</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <input type="email" id="email" name="email" required>
 
-<section>
-<div class="chamada-texto">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <label for="mensagem">Mensagem:</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <textarea id="mensagem" name="mensagem" required></textarea>
 
-    <h1>ATRAVÉS DO ARANHAVERSO SUPERA O PRIMEIRO FILME? 🕷️🕸️</h1>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <button type="submit">Enviar</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </form>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </main>
 
-       <p>#Homem-Aranha</p>
-</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </footer>
 
-<div>
-       <iframe width="560" height="360" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=fJ7Q46FsJ60vNk48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-</section>
-<section class="categoria">
-       <h2>Filmes e séries </h2>
-       <div class="categoria-videos">
-              <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">      
-              <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg"/>
-       </a>
-       <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">      
-              <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg"/>
-       </a>         
-        <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">      
-              <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg"/>
-       </a>         
-        <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">      
-              <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg"/>
-       </a>         
-        <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">      
-              <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg"/>
-       </a>
-       </div>
-</section>
-
-</body>
-</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <script src="script.js"></script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </html>
